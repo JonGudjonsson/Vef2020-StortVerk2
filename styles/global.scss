@@ -1,0 +1,70 @@
+
+/* Defines overall look of both pages */
+
+body {
+  background-color: #DCDCDC;
+}
+
+header h1{
+  grid-column: span 12;
+  justify-self: center;
+}
+
+main {
+  margin: auto;
+  max-width: 1200px;
+}
+
+main h2 {
+  grid-column: span 12;
+  justify-self: left;
+}
+
+main p {
+  grid-column: span 12;
+  justify-self: left;
+}
+
+.list {
+  grid-column: span 12;
+}
+
+.hovercard {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+  align-items: flex-start;
+  height: 20rem;
+}
+
+.poster {
+  display:flex;
+  position: relative;
+}
+
+.poster p {
+  background: #000000;
+  color: #FFF;
+  opacity: 0.5;
+  position: absolute;
+  left: 90%;
+  bottom: 0%;
+}
+
+.hovercard img {
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+}
+
+hr {
+  grid-column: span 10;
+  justify-self: center;
+}
+
+footer h3 {
+  grid-column: span 12;
+  justify-self: center;
+}
+

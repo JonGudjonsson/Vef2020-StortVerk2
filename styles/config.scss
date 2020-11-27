@@ -1,0 +1,29 @@
+
+/* Imports fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800&display=swap');
+
+/* Redefines font-size form 16px to 20px */
+html {
+  font-size: 16px;
+}
+
+/* Defines max-width of page content and grid */
+$max-width: 1290px;
+
+/* Defines mobile width for media queries
+   375 px is the width of the Iphone X's screen */
+$width-mobile: 800px;
+
+/* Colors defined */
+$skull-white: #fff;
+$ghost-white: #fafafa;
+$shining-gold: #e3cdb1;
+$codex-grey: #9b9b9b;
+$chaos-black: #000;
+$adeptus-battlegrey: #5e5b69;
+$astronomican-grey: #d0d0d0;
+$bleached-bone: #f7f1eb;
+
+/* Global transition effects on buttons */
+$transition: 300ms ease-in-out;

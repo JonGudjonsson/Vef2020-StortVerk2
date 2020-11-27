@@ -1,0 +1,21 @@
+
+/* Defines look of video player */
+
+.video-player {
+  grid-column: span 12;
+  justify-self: center;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.controls {
+  grid-column: span 12;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.controls img {
+  height: 3rem;
+  object-fit: cover;
+  padding: 0.5rem;
+}
