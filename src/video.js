@@ -1,6 +1,5 @@
 import { el, element, formatLength, videoAge } from './lib/utils';
 
-
 // Path to get info on videos
 const dataPath = '../videos.json'
 
@@ -41,9 +40,6 @@ function fetchVideoData() {
           document.getElementById('tengdheading').textContent = "Tengd myndbönd";
           populateHoverCards('tengdlist', videoData.related, Data.videos);
         }
-
-
-
     })
 }
 

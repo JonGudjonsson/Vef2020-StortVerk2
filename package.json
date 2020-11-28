@@ -10,7 +10,7 @@
     "sass": "node-sass --source-map-embed styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
     "dev": "concurrently npm:rollup-watch npm:sass-watch npm:browser-sync",
-    "lint_css":"stylelint \"styles/*.scss\" \"styles/pages/*.scss\"",
+    "lint_css":"stylelint \"styles/*.scss\"",
     "lint_js":"eslint \"src/*.js\" \"src/lib/*.js\""
   },
   "repository": {
