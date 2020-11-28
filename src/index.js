@@ -35,9 +35,8 @@ function populateHoverCards(listElement, list, videos){
   console.log(list);
   let section = document.getElementById(listElement);
   for(let i = 0; i < list.length; i++){
-    addHoverCard(section, list[i], videos);
+    addHoverCard(section, list[i]-1, videos);
   }
-
 }
 
 // Function which add a hoverCard element to html page
