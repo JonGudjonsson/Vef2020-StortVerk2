@@ -27,7 +27,7 @@ Verkefnið samanstendur af tveimur html skjölum (index.html og videos.html), þ
 
 Útskýring á javascript hluta:
 
--Rollup er notað til þess 
+-Rollup er stillt þannig að þegar það er keyrt þýðir það bæði skrárnar index.js og videos.js. Þýddar skrár eru geymdar undir möppunni ./dist en vinnuskrár eru undir ./src.
 
 1. Javascript skráin index.js inniheldur þá virkni sem notuð er á síðunni index.html. Skráin sækir gögn úr videos.json (sem geymd er í rót verkefnisins) þegar búið er að hlaða upp grunn síðunnar.
    Síðan eru upplýsingar úr henni notaðar til þess að teikna inn lista af myndböndum (með hjálparfalli úr javascript skránni utils.js).
