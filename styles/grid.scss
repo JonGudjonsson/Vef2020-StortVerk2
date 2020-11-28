@@ -7,10 +7,9 @@
   grid-row-gap: 30px;
   grid-template-columns: repeat(12, 1fr);
   margin: auto;
-  max-width: $max-width;
   overflow: hidden;
 
-  @media screen and (max-width: $width-mobile) {
+  @media screen and (max-width: 500px) {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
   }

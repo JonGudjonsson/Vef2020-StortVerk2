@@ -1,6 +1,4 @@
 import { el, element, formatLength, videoAge } from './lib/utils';
-//import { fetchEarthquakes } from './lib/earthquakes';
-//import { init, createPopup, buttonMapClick } from './lib/map';
 
 
 // Path to get info on videos
@@ -20,7 +18,6 @@ function fetchVideoData() {
       return result.json();
 		}).then((videoData) => {
       // Poplatte Nýleg mynbdönd
-      console.log(videoData.categories[2].videos);
       populateHoverCards('nyleglist', videoData.categories[0].videos, videoData.videos);
        // Populate Kennslumyndbönd
       populateHoverCards('kennslulist', videoData.categories[1].videos, videoData.videos);
@@ -32,7 +29,6 @@ function fetchVideoData() {
 // Function which populates each hoverCard element using
 // the data from the videos.json file
 function populateHoverCards(listElement, list, videos){
-  console.log(list);
   let section = document.getElementById(listElement);
   for(let i = 0; i < list.length; i++){
     addHoverCard(section, list[i]-1, videos);
@@ -41,7 +37,6 @@ function populateHoverCards(listElement, list, videos){
 
 // Function which add a hoverCard element to html page
 function addHoverCard(section, videoNumber, videoData){
-  console.log(videoData);
   const hoverElement =
     element('div', {'class': 'hovercard'}, null,
       element('div', {'class': 'poster'}, {click: () => {hoverClicked(videoNumber);}},
@@ -50,8 +45,10 @@ function addHoverCard(section, videoNumber, videoData){
         ),
         el('p', formatLength(videoData[videoNumber].duration))
       ),
-      el('h3', videoData[videoNumber].title),
-      el('p',  videoAge(videoData[videoNumber].created))
+      element('div', {'class': 'list-text'}, null,
+        el('h3', videoData[videoNumber].title),
+        el('p',  videoAge(videoData[videoNumber].created))
+      )
   );
   section.appendChild(hoverElement);
 }
@@ -59,7 +56,7 @@ function addHoverCard(section, videoNumber, videoData){
 // OnClick event for hoverCards, links to videos.html video numberwith
 // as a url query string
 function hoverClicked(videoNr){
-	window.location.href = ('./pages/videos.html?' + videoNr);
+	window.location.href = ('./pages/videos.html?' + (videoNr+1));
 }
 
 

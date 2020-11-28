@@ -3,8 +3,16 @@
 
 .video-player {
   grid-column: span 12;
+  height: 70vh;
   justify-self: center;
   grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+}
+
+.video-player #videoelement {
+  height: 80%;
+  object-fit: fill;
 }
 
 .controls {
@@ -18,4 +26,8 @@
   height: 3rem;
   object-fit: cover;
   padding: 0.5rem;
+}
+
+#videolysing {
+  font-size: 1.2rem;
 }

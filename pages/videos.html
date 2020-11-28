@@ -8,12 +8,12 @@
   <body>
 
     <header class="grid">
-      <h1 class="video-nafn"></h1>
+      <h1 id="video-nafn"></h1>
     </header>
 
-    <main class="grid videomain">
+    <main class="grid">
       <div class="video-player grid">
-        <video>Vafrinn þinn styður ekki myndband</video>
+        <video id="videoelement">Vafrinn þinn styður ekki myndband</video>
         <div class="controls">
           <div id="back"><img src="../img/back.svg" alt=""></div>
           <div id="play"><img src="../img/play.svg" alt=""></div>
@@ -27,8 +27,8 @@
 
 
 
-      <h2>Tengd myndbönd</h2>
-      <div id="tengdlist"> </div>
+      <h2 id="tengdheading"></h2>
+      <div class="list grid" id="tengdlist"> </div>
 
       <hr>
 
@@ -36,9 +36,9 @@
 
     <footer class="grid">
       <hr>
-      <h3><a href="../index.html">Til baka</h3>
+      <h2><a href="../index.html">Til baka</h2>
     </footer>
-    <script src="./dist/video.js"></script>
+    <script src="../dist/video.js"></script>
   </body>
 </html>
 

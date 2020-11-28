@@ -8,6 +8,7 @@ body {
 header h1{
   grid-column: span 12;
   justify-self: center;
+  font-size: 3rem;
 }
 
 main {
@@ -29,17 +30,34 @@ main p {
   grid-column: span 12;
 }
 
+.list-text {
+  align-items: start;
+  display:grid;
+  padding: 0;
+}
+
+.list-text p {
+  align-self: start;
+}
+
 .hovercard {
   display: flex;
   flex-direction: column;
   grid-column: span 4;
   align-items: flex-start;
   height: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media screen and (max-width: 1000px) {
+    grid-column: span 12;
+  }
 }
 
 .poster {
   display:flex;
   position: relative;
+  object-fit: cover
 }
 
 .poster p {
@@ -49,12 +67,12 @@ main p {
   position: absolute;
   left: 90%;
   bottom: 0%;
+  padding: 0.1rem;
 }
 
-.hovercard img {
+.poster img {
   height: 100%;
   overflow: hidden;
-  object-fit: cover;
   width: 100%;
 }
 
@@ -66,5 +84,10 @@ hr {
 footer h3 {
   grid-column: span 12;
   justify-self: center;
+  font-size: 1rem;
 }
 
+footer h2 {
+  grid-column: span 12;
+  justify-self: center;
+}
